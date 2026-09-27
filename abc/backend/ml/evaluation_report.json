@@ -1,0 +1,96 @@
+{
+  "model_name": "Linear SVM (Calibrated, Balanced)",
+  "model_version": "v2.0-tfidf-linear",
+  "trained_at": "2026-09-26T14:26:32.412524+00:00",
+  "dataset_file": "combined_fraud_sms_dataset.xlsx",
+  "dataset_hash": "446cb27221640c4080ec12e33a49bf0372eb04bf39c434bda7323f98fb3d0b50",
+  "total_raw_rows": 7742,
+  "total_unique_rows": 7739,
+  "train_rows": 5417,
+  "val_rows": 1161,
+  "test_rows": 1161,
+  "candidates_comparison": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.9724375538329026,
+      "spam_precision": 0.9510204081632653,
+      "spam_recall": 0.9209486166007905,
+      "spam_f1": 0.9357429718875502
+    },
+    "Logistic Regression (Balanced)": {
+      "accuracy": 0.9715762273901809,
+      "spam_precision": 0.9330708661417323,
+      "spam_recall": 0.9367588932806324,
+      "spam_f1": 0.9349112426035503
+    },
+    "Linear SVM (Calibrated, Balanced)": {
+      "accuracy": 0.979328165374677,
+      "spam_precision": 0.9635627530364372,
+      "spam_recall": 0.9407114624505929,
+      "spam_f1": 0.952
+    },
+    "Random Forest": {
+      "accuracy": 0.9715762273901809,
+      "spam_precision": 0.9661016949152542,
+      "spam_recall": 0.9011857707509882,
+      "spam_f1": 0.9325153374233128
+    }
+  },
+  "overall_test_metrics": {
+    "accuracy": 0.9784668389319552,
+    "ham": {
+      "precision": 0.9878453038674033,
+      "recall": 0.9845814977973568,
+      "f1": 0.9862107004964148,
+      "support": 908
+    },
+    "spam": {
+      "precision": 0.9453125,
+      "recall": 0.9565217391304348,
+      "f1": 0.9508840864440079,
+      "support": 253
+    },
+    "confusion_matrix": {
+      "tn": 894,
+      "fp": 14,
+      "fn": 11,
+      "tp": 242
+    }
+  },
+  "financial_scams_subset_metrics": {
+    "test_split_subset_count": 79,
+    "total_financial_scams_count": 518,
+    "accuracy": 0.9594594594594594,
+    "ham": {
+      "precision": 0.9795918367346939,
+      "recall": 0.9186602870813397,
+      "f1": 0.9481481481481482,
+      "support": 209
+    },
+    "spam": {
+      "precision": 0.9472049689440993,
+      "recall": 0.9870550161812298,
+      "f1": 0.9667194928684627,
+      "support": 309
+    },
+    "confusion_matrix": {
+      "tn": 192,
+      "fp": 17,
+      "fn": 4,
+      "tp": 305
+    }
+  },
+  "source_breakdown_test": {
+    "financial_scams_detection": {
+      "count": 79,
+      "accuracy": 0.8734177215189873
+    },
+    "spam_ham_india": {
+      "count": 315,
+      "accuracy": 0.9936507936507937
+    },
+    "sms_spam_collection": {
+      "count": 767,
+      "accuracy": 0.9830508474576272
+    }
+  }
+}

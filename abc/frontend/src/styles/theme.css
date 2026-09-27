@@ -1,0 +1,50 @@
+:root {
+    --color-background-light: #ffffff;
+    --color-background-dark: #1a1a1a;
+    --color-text-light: #000000;
+    --color-text-dark: #ffffff;
+    --color-primary-light: #0F6E56;
+    --color-primary-dark: #1D9E75;
+    --color-secondary-light: #f0f0f0;
+    --color-secondary-dark: #2a2a2a;
+    --color-accent-light: #ffcc00;
+    --color-accent-dark: #ff9900;
+}
+
+body {
+    background-color: var(--color-background-light);
+    color: var(--color-text-light);
+}
+
+.dark-mode {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-dark);
+}
+
+.button {
+    background-color: var(--color-primary-light);
+    color: var(--color-text-light);
+}
+
+.dark-mode .button {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-dark);
+}
+
+.card {
+    background-color: var(--color-secondary-light);
+    border: 1px solid var(--color-primary-light);
+}
+
+.dark-mode .card {
+    background-color: var(--color-secondary-dark);
+    border: 1px solid var(--color-primary-dark);
+}
+
+.accent {
+    color: var(--color-accent-light);
+}
+
+.dark-mode .accent {
+    color: var(--color-accent-dark);
+}
